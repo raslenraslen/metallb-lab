@@ -1,4 +1,3 @@
-# l2advertisement.yaml
 apiVersion: metallb.io/v1beta1
 kind: L2Advertisement
 metadata:
@@ -6,4 +5,4 @@ metadata:
   namespace: metallb-system
 spec:
   ipAddressPools:
-  - default-pool
+    - default-pool   # announce the pool above with ARP (Layer 2 mode)
